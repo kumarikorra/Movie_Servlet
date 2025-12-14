@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Booking Confirmation</title>
+
+<style>
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* BODY */
+body {
+      background: linear-gradient(135deg, #eef2ff, #f8fafc);
+}
+
+/* NAVBAR */
+.navbar {
+    background: linear-gradient(to right, #1e3a8a, #2563eb);
+    padding: 14px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.nav-left a{
+    color:white;
+    text-decoration:none;
+    margin-right:15px;
+    font-weight:500;
+}
+
+.nav-left a:first-child{
+    font-weight:bold;
+}
+
+.nav-right{
+    display:flex;
+    align-items:center;
+}
+
+.nav-right input{
+    padding:6px 10px;
+    border-radius:3px;
+    border:none;
+    margin-right:10px;
+}
+
+.nav-right span{
+    font-size:14px;
+}
+
+/* PAGE TITLE */
+.page-title{
+    padding:20px;
+    font-size:22px;
+}
+
+/* CONFIRMATION CARD */
+.card{
+    width:450px;
+    margin:20px auto;
+    background:white;
+    border-radius:5px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+.card-header{
+    padding:15px;
+    border-bottom:1px solid #ddd;
+    font-weight:bold;
+    font-size:18px;
+}
+
+.card-body{
+    padding:20px;
+}
+
+.card-body p{
+    margin:10px 0;
+    font-size:15px;
+}
+
+.download-btn{
+    margin-top:15px;
+    padding:10px 20px;
+    background:#28a745;
+    color:white;
+    border:none;
+    border-radius:4px;
+    cursor:pointer;
+    font-size:14px;
+}
+
+.download-btn:hover{
+    background:#218838;
+}
+
+/* FOOTER */
+.footer{
+    background: #0e2c5ef1;
+    color:white;
+    text-align:center;
+    padding:15px;
+    position:fixed;
+    bottom:0;
+    width:100%;
+    font-size:13px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="nav-left">
+        <a href="#">Movie Ticket Booking</a>
+        <a href="#">Home</a>
+        <a href="#">Movies</a>
+        <a href="#">My Bookings</a>
+    </div>
+
+    <div class="nav-right">
+        <input type="text" placeholder="Search movies...">
+        <span>Welcome, Yogesh</span>
+    </div>
+</div>
+
+<!-- PAGE TITLE -->
+<div class="page-title">
+    Booking Confirmation:
+</div>
+
+<!-- CONFIRMATION CARD -->
+<div class="card">
+    <div class="card-header">
+        Booking Confirmation
+    </div>
+
+    <div class="card-body">
+        <p><strong>Booking ID:</strong> 5</p>
+        <p><strong>Show ID:</strong> 2</p>
+        <p><strong>Total Amount:</strong> $11.99</p>
+        <p><strong>Booking Time:</strong> 2025-11-25 19:35:50</p>
+
+        <button class="download-btn">Download Ticket</button>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    © 2025 YP Movie Ticket Booking. All rights reserved.
+</div>
+
+</body>
+</html>
