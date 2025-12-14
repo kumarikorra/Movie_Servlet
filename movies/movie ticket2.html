@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Ticket Booking</title>
+
+    <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* BODY */
+body {
+    background: linear-gradient(135deg, #eef2ff, #f8fafc);
+}
+
+/* NAVBAR */
+.navbar {
+    background: linear-gradient(to right, #1e3a8a, #2563eb);
+    padding: 14px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.nav-left a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-left .brand {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-left a:hover {
+    text-decoration: underline;
+}
+
+/* SEARCH */
+.nav-center input {
+    padding: 7px 12px;
+    border-radius: 20px 0 0 20px;
+    border: none;
+    outline: none;
+}
+
+.nav-center button {
+    padding: 7px 14px;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    background: #0f172a;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* NAV RIGHT */
+.nav-right a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 18px;
+    font-size: 14px;
+}
+
+.nav-right a:hover {
+    color: #c7d2fe;
+}
+
+/* MAIN CONTENT */
+.container {
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.container h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+    color: #1e293b;
+}
+
+.container p {
+    font-size: 15px;
+    color: #475569;
+    margin-bottom: 45px;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #ffffff;
+    border: none;
+    width: 270px;
+    padding: 25px;
+    border-radius: 16px;
+    text-align: left;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #2563eb;
+}
+
+.card p {
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 16px;
+}
+
+/* BUTTONS */
+.card button {
+    padding: 9px 20px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(to right, #2563eb, #1e40af);
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background: linear-gradient(to right, #1e40af, #1e3a8a);
+}
+
+/* FOOTER */
+footer {
+    background: #0e2c5ef1;
+    color: #e5e7eb;
+    text-align: center;
+    padding: 16px;
+    font-size: 14px;
+    margin-top: 70px;
+}
+
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="nav-left">
+        <a href="#" class="brand">Movie Ticket Booking</a>
+        <a href="#">Home</a>
+        <a href="#">Movies</a>
+        <a href="#">My Bookings</a>
+    </div>
+
+    <div class="nav-center">
+        <input type="text" placeholder="Search movies...">
+        <button>🔍</button>
+    </div>
+
+    <div class="nav-right">
+        <span>Welcome,kumari </span>
+        <span class="user-tag">User</span>
+    </div>
+</header>
+
+<!-- MAIN -->
+<div class="container">
+    <h1>Welcome,kumari </h1>
+    <p>Here are your personalized recommendations.</p>
+
+    <div class="cards">
+        <div class="card">
+            <h3>My Bookings</h3>
+            <p>View your booked tickets.</p>
+            <button>View</button>
+        </div>
+
+        <div class="card">
+            <h3>Profile</h3>
+            <p>Update your profile and bank details.</p>
+            <button>View</button>
+        </div>
+
+        <div class="card">
+            <h3>Browse Movies</h3>
+            <p>Explore our collection of movies.</p>
+            <button>Browse</button>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    © 2025 YP Movie Ticket Booking. All rights reserved.
+</footer>
+
+</body>
+</html>
