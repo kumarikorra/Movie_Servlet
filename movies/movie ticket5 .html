@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movie Ticket Booking - Seat Selection</title>
+<style>
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* BODY */
+body {
+     background: linear-gradient(135deg, #eef2ff, #f8fafc);
+
+}
+
+/* NAVBAR */
+.navbar {
+    background: linear-gradient(to right, #1e3a8a, #2563eb);
+    padding: 14px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+    .navbar a {
+        color: #fff;
+        margin: 0 10px;
+        text-decoration: none;
+    }
+    .container {
+        margin: 20px auto;
+        max-width: 600px;
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .container h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+    color: #1e293b;
+}
+    .screen {
+        background: #ddd;
+        height: 20px;
+        margin: 20px 0;
+        border-radius: 4px;
+        text-align: center;
+        line-height: 20px;
+        font-weight: bold;
+    }
+    .seats {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .seat {
+        width: 40px;
+        height: 40px;
+        background: #28a745;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        cursor: pointer;
+        user-select: none;
+    }
+    .seat.selected {
+        background: #007bff;
+    }
+    .seat.occupied {
+        background: #dc3545;
+        cursor: not-allowed;
+    }
+    button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    footer {
+          background: #0e2c5ef1;
+        padding: 10px;
+         background: #0e2c5ef1;
+        color: #fff;
+    }
+</style>
+</head>
+<body>
+
+<div class="navbar">
+    <div class="nav-left">
+        <a href="#">Movie Ticket Booking</a>
+        <a href="#">Home</a>
+        <a href="#">Movies</a>
+    </div>
+    <div class="nav-right">
+        <input type="text" placeholder="Search movies...">
+        <a href="#">Login</a>
+        <a href="#">Register</a>
+    </div>
+</div>
+
+<div class="container">
+    <h2>Select Seats for Show</h2>
+    <div class="screen">SCREEN</div>
+    <div class="seats" id="seatContainer">
+        <div class="seat occupied">A1</div>
+        <div class="seat">A2</div>
+        <div class="seat">A3</div>
+        <div class="seat">A4</div>
+        <div class="seat">A5</div>
+        <div class="seat">B1</div>
+        <div class="seat">B2</div>
+        <div class="seat">B3</div>
+        <div class="seat">B4</div>
+        <div class="seat">B5</div>
+    </div>
+    <button onclick="bookSeats()">Book Selected Seats</button>
+</div>
+
+<footer>
+    &copy; 2025 YP Movie Ticket Booking. All rights reserved.
+</footer>
+</body>
+</html>
