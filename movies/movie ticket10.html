@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>City Management</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* BODY */
+body {
+     background: linear-gradient(135deg, #eef2ff, #f8fafc);
+}
+
+/* NAVBAR */
+.navbar {
+    background: linear-gradient(to right, #1e3a8a, #2563eb);
+    padding: 14px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-left a{
+    color:white;
+    text-decoration:none;
+    margin-right:15px;
+    font-size:14px;
+}
+
+.nav-left a:first-child{
+    font-weight:bold;
+}
+
+.nav-right{
+    display:flex;
+    align-items:center;
+}
+
+.nav-right input{
+    padding:6px 10px;
+    border:none;
+    border-radius:3px;
+    margin-right:10px;
+}
+
+.nav-right span{
+    font-size:13px;
+    background:#343a40;
+    padding:5px 10px;
+    border-radius:3px;
+}
+
+/* PAGE TITLE */
+.page-title{
+    padding:20px;
+    font-size:22px;
+}
+
+/* CONTENT CARD */
+.card{
+    width:90%;
+    margin:0 auto;
+    background:white;
+    border-radius:5px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    padding:20px;
+}
+
+/* ADD BUTTON */
+.add-btn{
+    background:#007bff;
+    color:white;
+    border:none;
+    padding:7px 12px;
+    border-radius:4px;
+    cursor:pointer;
+    font-size:13px;
+    margin-bottom:15px;
+}
+
+.add-btn:hover{
+    background:#0069d9;
+}
+
+/* TABLE */
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th, td{
+    padding:10px;
+    text-align:left;
+    font-size:14px;
+}
+
+th{
+    background:#f1f1f1;
+}
+
+tr:nth-child(even){
+    background:#f9f9f9;
+}
+
+/* ACTION BUTTON */
+.edit-btn{
+    background:#ffc107;
+    border:none;
+    padding:6px 10px;
+    border-radius:3px;
+    cursor:pointer;
+    font-size:12px;
+}
+
+/* FOOTER */
+.footer{
+   background: #0e2c5ef1;
+    color:white;
+    text-align:center;
+    padding:15px;
+    position:fixed;
+    bottom:0;
+    width:100%;
+    font-size:13px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="nav-left">
+        <a href="#">Movie Ticket Booking</a>
+        <a href="#">Home</a>
+        <a href="#">Movies</a>
+        <a href="#">My Bookings</a>
+        <a href="#">Admin</a>
+    </div>
+
+    <div class="nav-right">
+        <input type="text" placeholder="Search movies...">
+        <span>Welcome, Prasad| Admin</span>
+    </div>
+</div>
+
+<!-- PAGE TITLE -->
+<div class="page-title">
+    City Management
+</div>
+
+<!-- CARD -->
+<div class="card">
+
+    <button class="add-btn">Add City</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>City ID</th>
+                <th>Name</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>3</td>
+                <td>Chicago</td>
+                <td><button class="edit-btn">Edit</button></td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Houston</td>
+                <td><button class="edit-btn">Edit</button></td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Los Angeles</td>
+                <td><button class="edit-btn">Edit</button></td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>New York</td>
+                <td><button class="edit-btn">Edit</button></td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>Phoenix</td>
+                <td><button class="edit-btn">Edit</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    © 2025 YP Movie Ticket Booking. All rights reserved.
+</div>
+
+</body>
+</html>
