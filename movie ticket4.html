@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Select Show</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* BODY */
+body {
+     background: linear-gradient(135deg, #eef2ff, #f8fafc);
+}
+
+
+/* NAVBAR */
+.navbar {
+    background: linear-gradient(to right, #1e3a8a, #2563eb);
+    padding: 14px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-left {
+    display: flex;
+    gap: 18px;
+}
+
+.nav-left a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.brand {
+    font-weight: bold;
+}
+
+.nav-center input {
+    padding: 6px 10px;
+    border-radius: 4px 0 0 4px;
+    border: none;
+}
+
+.nav-center button {
+    padding: 6px 10px;
+    border: none;
+    background: #111;
+    color: white;
+    border-radius: 0 4px 4px 0;
+}
+
+.nav-right {
+    font-size: 13px;
+}
+
+.user-tag {
+    background: #374151;
+    padding: 3px 8px;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+/* CONTENT */
+.container {
+    padding: 40px 60px;
+}
+
+.container h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+    color: #1e293b;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    background: white;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 14px;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background: #f3f4f6;
+    color: #374151;
+}
+
+tr {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+.price {
+    font-weight: bold;
+    color: #111827;
+}
+
+/* BUTTON */
+.select-btn {
+    padding: 6px 14px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.select-btn:hover {
+    background: #1d4ed8;
+}
+
+/* FOOTER */
+footer {
+    background: #0e2c5ef1;
+    color: #e5e7eb;
+    text-align: center;
+    padding: 14px;
+    font-size: 13px;
+    margin-top: 60px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="nav-left">
+        <a class="brand">Movie Ticket Booking</a>
+        <a href="#">Home</a>
+        <a href="#">Movies</a>
+        <a href="#">My Bookings</a>
+    </div>
+
+    <div class="nav-center">
+        <input type="text" placeholder="Search movies...">
+        <button>🔍</button>
+    </div>
+
+    <div class="nav-right">
+        Welcome, Yogesh <span class="user-tag">User</span>
+    </div>
+</header>
+
+<!-- CONTENT -->
+<div class="container">
+    <h2>Select Show for Movie</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Theatre</th>
+                <th>Screen</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>PVR Cinemas</td>
+                <td>Screen 1</td>
+                <td>2025-11-02 11:00</td>
+                <td>2025-11-02 13:28</td>
+                <td class="price">$11.99</td>
+                <td>
+                    <button class="select-btn">Select Seats</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- FOOTER -->
+<footer>
+© 2025 YP Movie Ticket Booking. All rights reserved.
+</footer>
+
+</body>
+</html>
